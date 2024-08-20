@@ -1,7 +1,16 @@
+# Exclude node_modules from language statistics
+node_modules/* linguist-vendored
+
+# Treat specific file types as the intended language
 *.js linguist-language=JavaScript
 *.jsx linguist-language=JavaScript
 *.py linguist-language=Python
 *.html linguist-language=HTML
 *.css linguist-language=CSS
 *.sql linguist-language=SQL
+*.md linguist-language=Markdown
 
+# Ignore unnecessary files
+*.lock linguist-vendored
+package.json linguist-vendored
+package-lock.json linguist-vendored
