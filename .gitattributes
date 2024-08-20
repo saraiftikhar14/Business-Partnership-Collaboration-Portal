@@ -2,6 +2,7 @@
 node_modules/* linguist-vendored
 
 # Treat specific file types as the intended language
+*.js linguist-language=JavaScript
 *.jsx linguist-language=JavaScript
 *.py linguist-language=Python
 *.html linguist-language=HTML
